@@ -1,0 +1,6 @@
+package: github.com/davidrjonas/jwt-maker
+license: MIT
+owners:
+- name: David Jonas
+import:
+- package: github.com/dgrijalva/jwt-go

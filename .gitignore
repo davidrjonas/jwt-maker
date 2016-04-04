@@ -1,0 +1,7 @@
+jwt-maker
+.DS_Store
+/bin
+/vendor
+/dist
+.*.swp
+
