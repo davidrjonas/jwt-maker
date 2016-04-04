@@ -37,7 +37,7 @@ func main() {
 	var data map[string]interface{}
 
 	if err := json.Unmarshal([]byte(dataString), &data); err != nil {
-		fmt.Println("Error: Failed to parse json;", err)
+		fmt.Fprintln(os.Stderr, "Error: Failed to parse json;", err)
 		os.Exit(-1)
 	}
 
@@ -52,7 +52,7 @@ func main() {
 	tokenString, err := token.SignedString([]byte(key))
 
 	if err != nil {
-		fmt.Println("Error: Failed to generate string;", err)
+		fmt.Fprintln(os.Stderr, "Error: Failed to generate string;", err)
 		os.Exit(-1)
 	}
 
